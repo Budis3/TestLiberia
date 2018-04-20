@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PantallaPrincipalFXMLController">
+   <children>
+      <Button layoutX="75.0" layoutY="268.0" mnemonicParsing="false" text="Cursos" />
+      <Button fx:id="botonAlumnos" layoutX="427.0" layoutY="268.0" mnemonicParsing="false" onAction="#irAlumnos" text="Alumnos" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Cerrar" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Idioma">
+               <items>
+                  <RadioMenuItem mnemonicParsing="false" text="Español" />
+                  <RadioMenuItem mnemonicParsing="false" text="Ingles" />
+                  <RadioMenuItem mnemonicParsing="false" text="Valenciano" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
